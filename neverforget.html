@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin-top: 50px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .login-form, .todo-form, .todo-list {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .todo-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #ddd;
+        }
+        .todo-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Daily To-Do List</h1>
+
+        <!-- Login Form -->
+        <div class="login-form">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <button class="btn">Login</button>
+        </div>
+
+        <!-- To-Do Form -->
+        <div class="todo-form">
+            <h2>Add To-Do</h2>
+            <div class="form-group">
+                <label for="todo">To-Do:</label>
+                <input type="text" id="todo" name="todo">
+            </div>
+            <button class="btn">Add</button>
+        </div>
+
+        <!-- To-Do List -->
+        <div class="todo-list">
+            <h2>Your To-Dos</h2>
+            <div class="todo-item">
+                <span>Sample To-Do Item 1</span>
+                <button class="btn">Complete</button>
+            </div>
+            <div class="todo-item">
+                <span>Sample To-Do Item 2</span>
+                <button class="btn">Complete</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
